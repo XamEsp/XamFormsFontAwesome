@@ -1,0 +1,22 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamFormsFontAwesome"
+             x:Class="XamFormsFontAwesome.MainPage">
+
+    <StackLayout
+    Orientation="Horizontal" 
+    VerticalOptions="CenterAndExpand" 
+    HorizontalOptions="CenterAndExpand">
+
+        <local:FontAwesomeIcon
+        Text="{x:Static local:Icon.ChevronLeft}"/>
+
+        <local:FontAwesomeIcon
+        Text="{x:Static local:Icon.Plus}"/>
+
+        <local:FontAwesomeIcon
+        Text="{x:Static local:Icon.ChevronRight}"/>
+
+    </StackLayout>
+
+</ContentPage>
