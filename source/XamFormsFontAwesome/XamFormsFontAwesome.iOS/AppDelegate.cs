@@ -23,7 +23,21 @@ namespace XamFormsFontAwesome.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+
+
+
+            foreach (var familyNames in UIFont.FamilyNames.Where( f=>f.StartsWith( "Font Awesome" ) ).OrderBy(c => c).ToList())
+            {
+               Console.WriteLine(" * " + familyNames);
+               foreach (var familyName in UIFont.FontNamesForFamilyName(familyNames).OrderBy(c => c).ToList())
+               {
+                  Console.WriteLine(" *-- " + familyName);
+               }
+            }
+
+
+
+         LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
         }
