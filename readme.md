@@ -1,0 +1,2 @@
+# This repo is outdated now (Xamarin.Forms 4.5.530 and up), check the post in dev.to for more information
+# This is a code sample for my post about using FontAwesome in Xamarin.Forms at [dev.to](https://dev.to/codingcoach/using-font-awesome-in-xamarinforms--3mh)
